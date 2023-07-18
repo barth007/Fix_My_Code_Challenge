@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+""" Module for square class """
+
 
 class square():
 
+    """ Square Representation """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """ Instantation of class """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
